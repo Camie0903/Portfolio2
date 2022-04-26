@@ -70,6 +70,7 @@ section {
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
+   
     /* padding: 0%;
     margin: 0%; */
 }
@@ -123,6 +124,7 @@ section {
 }
 #about{
     background-color: rgb(217, 174, 148);
+    grid-area: about;
 }
 .about{
     text-align: center;
@@ -138,11 +140,15 @@ span{
     width: 400px;
     padding: 20px;
 }  
-
+.paragraph1{
+    padding: 20px;
+    border: 2px;
+}
 #skills{
     text-align: center;
     text-decoration: underline;
     background-color:rgb(155, 155, 122);
+  
 }
 #icons{
     display: flex;
@@ -185,6 +191,7 @@ i:hover{
 }
 #testimonials{
     background-color: rgb(217, 174, 148);
+    
 }
 .testi img{
  border-radius:50% ;
@@ -220,6 +227,7 @@ text-align: center;
     /* text-align: center;
     text-decoration: underline; */
     background-color:rgb(155, 155, 122);
+    
 }
 .edu_head{
     text-align: center;
@@ -233,6 +241,7 @@ text-align: center;
 }
 #project{
     background-color: rgb(217, 174, 148);
+    grid-area: project;
 }
 .pro_head{
     text-align: center;
@@ -275,6 +284,7 @@ text-align: center;
     width: 100%;
     margin-right: 20px;
   }
+  
   #contact h2 {
     display: flex;
     flex-direction: row;
@@ -337,7 +347,7 @@ text-align: center;
   font-family: 'Alfa Slab One', cursive;
   position: relative;
   display: inline-block;
-  color: black;
+  color: white;
   text-transform: uppercase;
   animation: waviy 1s infinite;
   animation-delay: calc(.1s * var(--i));
@@ -348,11 +358,11 @@ text-align: center;
     transform: translateY(0)
   }
   20% {
-    transform: translateY(-20px)
+    transform: tra  nslateY(-20px)
   }
 }
-  
-  
+  /*GRID STYLES  */
+
   
   
   
