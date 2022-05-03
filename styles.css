@@ -5,6 +5,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+img{
+    object-fit: cover;
+}
+.wording{
+    padding: 15px;
+}
 a.logo{
     text-decoration: none;
     text-align: left;
@@ -15,15 +21,32 @@ a.logo{
     align-items: center;
     
 }
-ul{
+nav.navbar{
+    position: fixed;
+    z-index: 1000;
+    background-color: black;
+}
+.progress{
+    width: 70%;
+    margin: auto;
+}
+.nav-link{
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+}
+/* ul{
     list-style-type: none;
     overflow: hidden;
     background-color: black;
     padding: 0%;
     margin: 0%;
     display: flex;
-}
-li a{
+} */
+/* li a{
     display: block;
     color: white;
     padding: 14px 16px;
@@ -48,11 +71,7 @@ a#navb{
     justify-content: center;
     align-items: center;
     
-} 
-/* #img{
-    height: 950px;
-    width: 1px;
-} */
+}  */
 section {
     min-height: 100vh;
     /* padding: 20px;  */
@@ -117,6 +136,11 @@ section {
 .contain{
     padding: 50px;
 }
+
+.navbar-nav{
+    position: fixed; 
+}
+
 .button1:hover{
     background: aqua;
     color: white;
@@ -138,7 +162,7 @@ span{
 }
 #img1{
     width: 400px;
-    padding: 20px;
+    padding: 15px;
 }  
 .paragraph1{
     padding: 20px;
@@ -193,7 +217,7 @@ i:hover{
     background-color: rgb(217, 174, 148);
     
 }
-.testi img{
+.test-img{
  border-radius:50% ;
  width: 200px;
  height: 200px;
@@ -242,6 +266,10 @@ text-align: center;
 #project{
     background-color: rgb(217, 174, 148);
     grid-area: project;
+}
+.template{
+    width: 30px;
+    height: 30px;
 }
 .pro_head{
     text-align: center;
@@ -334,7 +362,16 @@ text-align: center;
   .fa-solid{
       font-size: 50px;
   }
-  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+  .carousel-item{
+      /* display: flex; */
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding-top: 10%;
+  }
+  .test-img{
+    margin: auto;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 
 
@@ -342,6 +379,7 @@ text-align: center;
   position: relative;
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
   font-size: 60px;
+  margin: 20px;
 }
 .waviy span {
   font-family: 'Alfa Slab One', cursive;
@@ -358,7 +396,7 @@ text-align: center;
     transform: translateY(0)
   }
   20% {
-    transform: tra  nslateY(-20px)
+    transform: translateY(-20px)
   }
 }
   /*GRID STYLES  */
@@ -377,7 +415,6 @@ a.logo{
 ul{
     flex-wrap:wrap ;
 }
-}
 
 
 @media screen and (max-width: 800px) {
@@ -391,8 +428,8 @@ ul{
 }
 @media screen and (max-width: 724px){
  #img1{
-     width: 200px;
-     height: 200px;
+     width: 250px;
+     height: 300px;
  }
  .anything{
     flex-wrap: wrap;
@@ -415,9 +452,4 @@ ul{
         font-size: 30px;
     }
 }
-
-
-/*  display: flex;
-    flex-direction:column;
-    justify-content: center;
-    flex-wrap:wrap; */
+}
